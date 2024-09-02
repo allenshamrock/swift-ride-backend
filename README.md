@@ -15,24 +15,42 @@ with a key pointing to an array of data, like this:
 
 ```json
 {
-  "toys": [
-    {
+  "recipeInfo": [
+   {
       "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
+      "name": "Samosa Chaat",
+      "description": "A popular Kenyan street food snack made with crispy samosas topped with spicy chutneys, yogurt, and crunchy toppings.",
+      "ingredients": [
+        "10 samosas, store-bought or homemade",
+        "1 cup chickpeas, cooked",
+        "1 onion, finely chopped",
+        "2 tomatoes, chopped",
+        "1/2 cup plain yogurt",
+        "1/4 cup tamarind chutney",
+        "1/4 cup mint-coriander chutney",
+        "1/4 cup sev (crunchy chickpea noodles)",
+        "1/4 cup chopped cilantro",
+        "1/4 cup chopped red onion",
+        "1/4 cup chopped tomatoes",
+        "1/4 cup chopped green chilies",
+        "1 lemon, cut into wedges",
+        "Salt, to taste"
+      ],
+      "instructions": [
+        "Prepare Samosas: If using store-bought samosas, reheat them according to package instructions. If using homemade samosas, fry or bake them until crispy.",
+        "Assemble Chaat: Arrange the samosas on a serving plate. Top each samosa with cooked chickpeas, finely chopped onion, chopped tomatoes, plain yogurt, tamarind chutney, and mint-coriander chutney.",
+        "Add Crunch: Sprinkle sev over the samosas for extra crunch.",
+        "Garnish: Garnish the samosa chaat with chopped cilantro, chopped red onion, and chopped green chilies.",
+        "Serve: Serve samosa chaat immediately with lemon wedges on the side. Enjoy the explosion of flavors!"
+      ],
+      "cook_time": "No cooking time specified as it involves assembling pre-cooked samosas and toppings.",
+      "img_url": "https://rajaranibakery.com/wp-content/uploads/2023/12/Samosa-Chaat.jpg"
     }
   ]
 }
 ```
 
-Then, run `npm run seed` to copy data from the `db/seeds.json` file to the
+Then, run `npm run seed` to copy data from the `db/db.json` file to the
 `db/db.json` file. `json-server` uses the `db.json` file to create your RESTful
 API, so make sure your `db.json` file is always up to date!
 
